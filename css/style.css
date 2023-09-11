@@ -9982,3 +9982,9 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+.navbar-brand img {
+  height: 80px;
+  margin-right: 10px;
+ width: 100px; 
+}
+
