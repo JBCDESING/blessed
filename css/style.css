@@ -9989,6 +9989,51 @@ h6,
   left: 20px;
   z-index: 9999;
 }
+/* styles.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.door {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.door-left,
+.door-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: brown;
+  border: 2px solid #000;
+  transform-origin: left;
+  transition: transform 1s;
+}
+
+.door-right {
+  left: 50%;
+  transform-origin: right;
+}
+
+.door.open .door-left {
+  transform: rotateY(-120deg);
+}
+
+.door.open .door-right {
+  transform: rotateY(120deg);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
 
 
 
